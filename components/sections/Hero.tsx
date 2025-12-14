@@ -51,22 +51,21 @@ const Hero: React.FC = () => {
           I'm <span className="text-white font-semibold">Lataksh Sariya</span>, a Frontend Developer with expert-level skills in HTML, CSS, and JavaScript. I specialize in building dynamic, responsive web applications using React.js and modern frontend technologies, creating interactive UI components with modular and maintainable code.
         </motion.p>
 
-        <motion.div variants={fadeInUp} className="flex flex-col md:flex-row items-center gap-6 justify-center md:justify-start" style={{ pointerEvents: 'auto' }}>
+        <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start flex-wrap" style={{ pointerEvents: 'auto' }}>
           <MagneticButton>
-            <a href="#projects" className="group relative px-8 py-4 bg-white text-black rounded-full font-semibold text-lg overflow-hidden inline-flex items-center gap-2 transition-all hover:scale-105">
+            <a href="#projects" className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-white text-black rounded-full font-semibold text-base sm:text-lg overflow-hidden inline-flex items-center gap-2 transition-all hover:scale-105 whitespace-nowrap">
               <span className="relative z-10">View Work</span>
               <div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
             </a>
           </MagneticButton>
 
-          <div className="flex items-center gap-4">
-            <MagneticButton>
-               <a href="#contact" className="px-8 py-4 text-white border border-white/20 rounded-full font-semibold text-lg hover:bg-white/5 transition-colors">
-                 Contact Me
-               </a>
-            </MagneticButton>
-            <ResumeButton />
-          </div>
+          <MagneticButton>
+            <a href="#contact" className="px-6 sm:px-8 py-3 sm:py-4 text-white border border-white/20 rounded-full font-semibold text-base sm:text-lg hover:bg-white/5 transition-colors whitespace-nowrap">
+              Contact Me
+            </a>
+          </MagneticButton>
+          
+          <ResumeButton />
         </motion.div>
       </motion.div>
 
